@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Paris Saclay - YASSAD TRAVEL</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#F8F5F1;
+color:#1e293b;
+line-height:1.7;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+:root{
+--primary:#beaa71;
+--secondary:z#d8d8d8;
+--gold:#D4AF37;
+--white:#ffffff;
+--light:#f7f9fc;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(135deg,#f5e1a2,#000000);
+color:white;
+padding:100px 0;
+text-align:center;
+}
+
+/* Animation titre Paris-Saclay */
+
+.hero h1{
+
+font-size:3rem;
+margin-bottom:20px;
+font-weight:800;
+
+background:linear-gradient(
+90deg,
+#ffffff,
+#D4AF37,
+#ffffff,
+#f5e1a2
+);
+
+background-size:300%;
+
+-webkit-background-clip:text;
+background-clip:text;
+
+color:transparent;
+
+animation:
+saclayGlow 4s linear infinite,
+saclayFloat 2.5s ease-in-out infinite alternate;
+
+text-shadow:0 0 25px rgba(212,175,55,0.5);
+
+}
+
+
+/* Déplacement du reflet doré */
+
+@keyframes saclayGlow{
+
+0%{
+background-position:0%;
+}
+
+100%{
+background-position:300%;
+}
+
+}
+
+
+/* Mouvement doux */
+
+@keyframes saclayFloat{
+
+0%{
+transform:translateY(0) scale(1);
+}
+
+100%{
+transform:translateY(-12px) scale(1.05);
+}
+
+}
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:1.15rem;
+opacity:.95;
+}
+
+.hero-buttons{
+margin-top:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+margin:10px;
+transition:.3s;
+}
+
+.btn-primary{
+background:var(--gold);
+color:#000;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-secondary{
+background:white;
+color:var(--primary);
+}
+
+/* SECTION */
+
+section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:2.2rem;
+margin-bottom:20px;
+color:var(--primary);
+font-weight:700;
+}
+
+.section-subtitle{
+text-align:center;
+max-width:700px;
+margin:auto;
+margin-bottom:50px;
+color:#64748b;
+}
+
+/* TIMELINE */
+
+.timeline{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.step{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.step-number{
+width:60px;
+height:60px;
+background:var(--gold);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:1.4rem;
+font-weight:bold;
+margin:auto;
+margin-bottom:20px;
+}
+
+/* SERVICES */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+color:var(--primary);
+margin-bottom:15px;
+}
+
+.card ul{
+list-style:none;
+}
+
+.card li{
+margin-bottom:10px;
+}
+
+/* ELIGIBILITY */
+
+.eligibility{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+gap:30px;
+}
+
+.box{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+.box h3{
+color:var(--primary);
+margin-bottom:20px;
+}
+
+/* PRICING */
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:30px;
+}
+
+.price-card{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.price{
+font-size:2.3rem;
+font-weight:800;
+color:var(--gold);
+margin:20px 0;
+}
+.price-compl{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+text-align:center;
+height:100%;
+}
+
+/* PAYMENT */
+
+.payment{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+
+
+
+/* WHATSAPP */
+
+.whatsapp{
+display:inline-block;
+background:#25D366;
+color:white !important;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+margin-top:20px;
+transition:all .3s ease;
+box-shadow:0 10px 25px rgba(37,211,102,.25);
+}
+
+.whatsapp:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(37,211,102,.35);
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#64748b;
+}
+.payment{
+background:white;
+padding:50px;
+border-radius:25px;
+box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.cta{
+background:linear-gradient(135deg,#c7bd92,#d8dade);
+color:white;
+padding:70px 50px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.cta h2{
+font-size:2.2rem;
+margin-bottom:20px;
+font-weight:700;
+}
+
+.cta p{
+max-width:850px;
+margin:auto;
+line-height:1.9;
+font-size:1.05rem;
+}
+
+.btn-payment{
+display:inline-block;
+margin-top:35px;
+background : linear-gradient(135deg,#ab942d,#6078a9);
+color:#f7f2f2;
+padding:18px 40px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+font-size:1rem;
+transition:.3s;
+box-shadow:0 10px 30px rgba(125, 116, 89, 0.35);
+}
+
+.btn-payment:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(212,175,55,.45);
+}
+
+.cta-note{
+margin-top:30px !important;
+font-size:15px;
+opacity:.95;
+line-height:2;
+}
+
+.payment-section{
+margin-bottom:60px;
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:992px){
+
+    .timeline,
+    .cards,
+    .eligibility,
+    .pricing{
+
+        grid-template-columns:1fr;
+    }
+
+}
+@media (max-width:768px){
+
+    .hero{
+
+        padding:70px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:2rem;
+        line-height:1.3;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .btn{
+
+        width:100%;
+        max-width:320px;
+        text-align:center;
+
+    }
+
+    section{
+
+        padding:60px 0;
+
+    }
+
+    .section-title{
+
+        font-size:1.8rem;
+
+    }
+
+    .section-subtitle{
+
+        font-size:.95rem;
+
+    }
+
+    .step,
+    .card,
+    .box,
+    .price-card,
+    .price-compl,
+    .payment{
+
+        padding:25px;
+
+    }
+
+    .price{
+
+        font-size:2rem;
+
+    }
+
+    .cta{
+
+        padding:40px 25px;
+
+    }
+
+    .cta h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .cta p{
+
+        font-size:.95rem;
+
+    }
+
+    .btn-payment{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+    .whatsapp{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<h1> 🎓 Université Paris-Saclay 🎓</h1>
+
+<p>
+Destinée aux étudiants souhaitant poursuivre leurs études en Master 1 ou Master 2, cette procédure permet de candidater à l'Université Paris-Saclay, l'une des meilleures universités de France. Nous vous accompagnons dans toutes les étapes de votre candidature jusqu'à l'obtention de votre admission et le suivi du dossier sur la plateforme Etude en France ainsi que la préparation de l’entretien.
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://wa.me/213667834958?text=Bonjour%20YASSAD%20TRAVEL,%20je%20souhaite%20commencer%20ma%20procédure%20Paris-Saclay." target="_blank" class="btn btn-primary">
+Commencer ma procédure
+</a>
+
+<a href="#tarifs" class="btn btn-secondary">
+Voir les tarifs
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Comment fonctionne la procédure Paris Saclay?
+</h2>
+
+<p class="section-subtitle">
+Un parcours simple et structuré pour maximiser vos chances d'admission.
+</p>
+
+<div class="timeline">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Création du dossier</h3>
+<p>Création du compte Inception (Paris-Saclay)
+    Remplissage complet du dossier
+</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3> Préparation des documents</h3>
+<p>✅ Vérification et classement des documents </p>
+<p>✅ Vérification des traductions</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3> Rédaction des projets</h3>
+<p>✅ Rédaction du projet d'études</p>
+<p>✅ Rédaction du projet professionnel</p>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<h3>Accompagnement personnalisé</h3>
+<p>✅ Conseils adaptés à votre profil</p>
+✅ Suivi du dossier jusqu'à sa validation
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Conditions d'éligibilité
+</h2>
+
+<div class="eligibility">
+
+<div class="box">
+
+<h3>🎓</h3>
+
+<ul>
+<li>✅ Diplômes obtenus (Baccalauréat / Diplôme universitaire obtenu (selon le niveau visé) original et traduit.</li>
+<li>✅ Relevés de notes universitaires de toutes les années d'études effectuées.</li>
+<li>✅ Passeport valide</li>
+<li>✅ TCF : Non exigée pour certaines formations lors de l'admission, mais obligatoire pour l'obtention du visa étudiant.
+     (Attestation de français {TCF (TP) minimum B2  ] selon les exigences de l'établissement.
+</li>
+<li>✅ Classement de promotion (s'il est demandé)</li>
+
+</ul>
+
+</div>
+
+<div class="box">
+
+<h3>🎓 </h3>
+
+<ul>
+<li>✅ Justificatifs de niveau en langue étrangère (TOEFL, TOEIC, attestation, etc.)</li>
+<li>✅ Descriptifs et volumes horaires des enseignements suivis (si demandés)</li>
+<li>✅ 2 références académiques ou professionnelles (enseignants universitaires ou professionnels exerçant dans votre domaine d'études).</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="tarifs">
+
+<div class="container">
+
+<h2 class="section-title">
+💰 Tarifs
+</h2>
+
+<div class="pricing">
+
+<div class="price-card">
+
+<h3>Frais universitaires</h3>
+
+
+
+<p>Master (M1, M2)</p>
+<p>À partir de</p>
+
+<div class="price">250 €</div>
+
+
+
+</div>
+
+<div class="price-card">
+
+<h3>Accompagnement YASSAD TRAVEL</h3>
+
+<div class="price">
+15 000 DA
+</div>
+
+<p>
+≈ 55 €
+</p>
+
+<br>
+
+<p>
+✅ Accompagnement pour la phase d'admission et la gestion de votre compte Inception (Université Paris-Saclay).
+</p>
+
+</div>
+
+
+
+<div class="price-compl">
+
+<h3>Frais complémentaire</h3>
+
+<div class="price">
+5 000 DA
+</div>
+
+<p>
+≈ 20 €
+</p>
+
+<br>
+
+<p>
+(à régler uniquement après l'obtention de votre admission)
+<p>✅ Validation et finalisation de votre compte PASTEL.</p>
+<p>✅ Préparation personnalisée à l'entretien Campus France avec un conseiller YASSAD TRAVEL, lors d'une session en visioconférence (Google Meet), avant votre entretien officiel.</p>
+
+</p>
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<div class="container">
+<section>
+
+<div class="container">
+<section>
+
+<div class="container">
+
+<div class="cta">
+
+<h2>
+🎓 Prêt à commencer votre projet d'études en France ?
+</h2>
+
+<p>
+Pour finaliser votre inscription à notre accompagnement Campus France,
+consultez nos coordonnées de paiement puis effectuez votre règlement.
+
+Une fois le paiement effectué, il vous suffira d'envoyer votre reçu via WhatsApp afin que nous puissions ouvrir votre dossier et débuter votre accompagnement.
+</p>
+
+<a
+href="documents/coordonnees-paiement-yassad-travel.pdf"
+target="_blank"
+class="btn-payment">
+
+📄 Télécharger les coordonnées de paiement
+
+</a>
+
+<p class="cta-note">
+
+1️⃣ Téléchargez les coordonnées de paiement<br>
+2️⃣ Effectuez votre règlement<br>
+3️⃣ Envoyez votre reçu via WhatsApp<br>
+4️⃣ Nous confirmons votre inscription
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="payment-section">
+
+<div class="container">
+
+<div class="payment">
+
+<h2 class="section-title">
+💳 Paiement et envoi du reçu
+</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+Une fois votre paiement effectué, envoyez votre justificatif via WhatsApp afin que notre équipe puisse vérifier votre règlement et lancer immédiatement votre accompagnement Campus France.
+</p>
+
+<div style="text-align:center;margin-top:30px;">
+
+<a
+href="https://wa.me/213667834958"
+target="_blank"
+class="whatsapp">
+
+📲 Envoyer mon reçu sur WhatsApp
+
+</a>
+
+</div>
+
+<p style="
+margin-top:25px;
+text-align:center;
+font-size:14px;
+color:#64748b;
+">
+Notre équipe confirme généralement les inscriptions sous 24 heures.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+© 2026 YASSAD TRAVEL — Accompagnement Campus France
+
+</footer>
+
+</body>
+</html>
