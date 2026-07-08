@@ -618,6 +618,7 @@ section{
     display:flex;
     flex-direction:column;
     justify-content:center;
+  width:calc(100% - 75px);
 }
 
 .contact-info h4{
