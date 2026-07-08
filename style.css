@@ -1587,6 +1587,7 @@ font-size:32px;
     flex-direction:column;
     text-align:center;
     padding:35px 25px;
+    gap:25px; /* espace entre le texte et le bouton */
 }
 
 .cta-content h4{
