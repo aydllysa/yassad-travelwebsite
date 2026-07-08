@@ -1611,7 +1611,38 @@ font-size:32px;
 }
 
 .contact-card{
-    padding:25px;
+   padding:20px;
+  
+}
+
+.contact-card{
+    gap:15px;
+    padding:20px;
+}
+
+.contact-icon{
+    width:60px;
+    height:60px;
+    font-size:28px;
+}
+
+.contact-info{
+    flex:1;
+    min-width:0;
+}
+
+.contact-info h4{
+    font-size:18px;
+}
+
+.contact-info p{
+    font-size:14px;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+}
+
+.contact-arrow{
+    display:none;
 }
 
 .bottom-footer{
