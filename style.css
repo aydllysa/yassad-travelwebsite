@@ -1754,6 +1754,18 @@ font-size:32px;
     }
 
 }
+
+
+@media (max-width: 768px){
+
+    .cta-btn{
+        font-size: 14px;
+        padding: 14px 20px;
+        white-space: normal;
+        text-align: center;
+    }
+
+}
     
     
 
